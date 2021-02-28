@@ -2,7 +2,7 @@
 
 //check if the user is logged in
 if (empty($_SESSION['loggedin'])){
-    header('Location: /phpmotors');
+    header('Location: /fantasyscore');
 }
 //"<option value='$classification[classificationId]'"   $clientFname = $_SESSION['clientData']['clientFirstname'];
 $clientFname = $_SESSION['clientData']['clientFirstname'];
@@ -13,7 +13,7 @@ $EMail = "<li>Email: $clientMail</li>";
 $clientLev = $_SESSION['clientData']['clientLevel'];
 $Lev = "<li>Client Level: $clientLev</li>"
 
-?><?php include $_SERVER['DOCUMENT_ROOT'].'/phpmotors/common/header.php'; ?>
+?><?php include $_SERVER['DOCUMENT_ROOT'].'/fantasyscore/common/header.php'; ?>
 
 <?php
 echo $Name;
@@ -32,10 +32,10 @@ echo $Name;
 
 <?php
     if ($clientLev > 1){
-        echo "<p>Go to the </p><a href= '/phpmotors/vehicles'>Vehicle Manager</a>";
+        echo "<p>Go to the </p><a href= '/fantasyscore/vehicles'>Vehicle Manager</a>";
     }
 ?>
 
 
 
-<?php include $_SERVER['DOCUMENT_ROOT'].'/phpmotors/common/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/fantasyscore/common/footer.php'; ?>

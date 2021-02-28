@@ -1,10 +1,10 @@
 <?php
 /*
- * Proxy connetion to the phpmotors database
+ * Proxy connetion to the fantasyscore database
  */
-function phpmotorsConnect() {
+function fantasyscoreConnect() {
  $server = 'localhost';
- $dbname = 'phpmotors';
+ $dbname = 'fantasyscore';
  $username = 'iClient';
  $password = 'DgYMOHjnn7vKfG3x';
  $dsn = "mysql:host=$server;dbname=$dbname";
@@ -19,9 +19,9 @@ function phpmotorsConnect() {
  }
  catch(PDOException $e) {
      //echo "It didn't work, error: " . $e->getMessage();
-     header('Location: /phpmotors/view/500.php');
+     header('Location: /fantasyscore/view/500.php');
      exit;
  }
 }
-//phpmotorsConnect();
+//fantasyscoreConnect();
 

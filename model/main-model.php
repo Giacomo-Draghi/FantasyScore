@@ -2,11 +2,11 @@
 //Main PHP Motors Model
 
 function getClassifications(){
-    // Create a connection object from the phpmotors connection function
-    $db = phpmotorsConnect(); 
+    // Create a connection object from the fantasyscore connection function
+    $db = fantasyscoreConnect(); 
     // The SQL statement to be used with the database 
     $sql = 'SELECT classificationId, classificationName FROM carclassification ORDER BY classificationName ASC'; 
-    // The next line creates the prepared statement using the phpmotors connection      
+    // The next line creates the prepared statement using the fantasyscore connection      
     $stmt = $db->prepare($sql);
     // The next line runs the prepared statement 
     $stmt->execute(); 

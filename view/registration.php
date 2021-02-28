@@ -1,4 +1,4 @@
-<?php include $_SERVER['DOCUMENT_ROOT'].'/phpmotors/common/header.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/fantasyscore/common/header.php'; ?>
 
 <h1>Register</h1>
 <?php
@@ -6,7 +6,7 @@ if (isset($message)) {
  echo $message;
 }
 ?>
-<form action= "/phpmotors/accounts/index.php" method="post">
+<form action= "/fantasyscore/accounts/index.php" method="post">
 <label>First Name:</label><br>
     <input name="clientFirstname" id="clientFirstname" type="text" <?php
     if (isset($clientFirstname)) {
@@ -30,4 +30,4 @@ if (isset($message)) {
 </form>
 
 
-<?php include $_SERVER['DOCUMENT_ROOT'].'/phpmotors/common/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/fantasyscore/common/footer.php'; ?>

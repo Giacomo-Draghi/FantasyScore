@@ -7,12 +7,12 @@
 //Register a new class
 
 function regClass($classificationName){
-    // Create a connection object using the phpmotors connection function
-    $db = phpmotorsConnect();
+    // Create a connection object using the fantasyscore connection function
+    $db = fantasyscoreConnect();
     // The SQL statement
     $sql = 'INSERT INTO carclassification (classificationName)
         VALUES (:classificationName)';
-    // Create the prepared statement using the phpmotors connection
+    // Create the prepared statement using the fantasyscore connection
     $stmt = $db->prepare($sql);
     // The next four lines replace the placeholders in the SQL
     // statement with the actual values in the variables
@@ -31,14 +31,14 @@ function regClass($classificationName){
 //Register a new vehicle
 
 function regInv($classificationId, $invMake, $invModel, $invDescription, $invImage, $invThumbnail, $invPrice, $invStock, $invColor){
-    // Create a connection object using the phpmotors connection function
-    $db = phpmotorsConnect();
+    // Create a connection object using the fantasyscore connection function
+    $db = fantasyscoreConnect();
     // The SQL statement
     $sql = 'INSERT INTO inventory (classificationId, invMake,invModel, invDescription, 
                         invImage, invThumbnail, invPrice, invStock, invColor)
         VALUES (:classificationId, :invMake, :invModel, :invDescription, 
                         :invImage, :invThumbnail, :invPrice, :invStock, :invColor)';
-    // Create the prepared statement using the phpmotors connection
+    // Create the prepared statement using the fantasyscore connection
     $stmt = $db->prepare($sql);
     // The next four lines replace the placeholders in the SQL
     // statement with the actual values in the variables

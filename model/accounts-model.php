@@ -7,12 +7,12 @@
 //Register a new client
 
 function regClient($clientFirstname, $clientLastname, $clientEmail, $clientPassword){
-    // Create a connection object using the phpmotors connection function
-    $db = phpmotorsConnect();
+    // Create a connection object using the fantasyscore connection function
+    $db = fantasyscoreConnect();
     // The SQL statement
     $sql = 'INSERT INTO clients (clientFirstname, clientLastname,clientEmail, clientPassword)
         VALUES (:clientFirstname, :clientLastname, :clientEmail, :clientPassword)';
-    // Create the prepared statement using the phpmotors connection
+    // Create the prepared statement using the fantasyscore connection
     $stmt = $db->prepare($sql);
     // The next four lines replace the placeholders in the SQL
     // statement with the actual values in the variables
@@ -34,7 +34,7 @@ function regClient($clientFirstname, $clientLastname, $clientEmail, $clientPassw
 
 // Check for an existing email address
 function checkExistingEmail($clientEmail) {
-    $db =  phpmotorsConnect();
+    $db =  fantasyscoreConnect();
     $sql = 'SELECT clientEmail FROM clients WHERE clientEmail = :email';
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':email', $clientEmail, PDO::PARAM_STR);
@@ -50,7 +50,7 @@ function checkExistingEmail($clientEmail) {
 
    // Get client data based on an email address
 function getClient($clientEmail){
-    $db = phpmotorsConnect();
+    $db = fantasyscoreConnect();
     $sql = 'SELECT clientId, clientFirstname, clientLastname, clientEmail, clientLevel, clientPassword FROM clients WHERE clientEmail = :clientEmail';
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':clientEmail', $clientEmail, PDO::PARAM_STR);

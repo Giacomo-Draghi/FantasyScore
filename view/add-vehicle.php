@@ -4,7 +4,7 @@ $clientLev = $_SESSION['clientData']['clientLevel'];
 
 if (isset($_SESSION['loggedin']) and $clientLev > 1){
 } else {
-    header('Location: /phpmotors');
+    header('Location: /fantasyscore');
 }
 //Build the Selected list
 $classificationList = '<select name="classificationId" id="classificationId" required> <option value="">Choose Car Classification</option>';
@@ -20,7 +20,7 @@ foreach ($classifications as $classification) {
 }
 
 $classificationList .='</select><br><br>';
-?><?php include $_SERVER['DOCUMENT_ROOT'].'/phpmotors/common/header.php'; ?>
+?><?php include $_SERVER['DOCUMENT_ROOT'].'/fantasyscore/common/header.php'; ?>
 
 <h1>Register</h1>
 <h4>*Note all fields are Required</h4>
@@ -29,7 +29,7 @@ if (isset($message)) {
  echo $message;
 }
 ?>
-<form action= "/phpmotors/vehicles/index.php" method="post">
+<form action= "/fantasyscore/vehicles/index.php" method="post">
 <label>Car Classification:</label><br>
     <?php echo $classificationList ; ?>
 <label>Make:</label><br>
@@ -76,4 +76,4 @@ if (isset($message)) {
 <input type="hidden" name="action" value="add-inventory">
 </form>
 
-<?php include $_SERVER['DOCUMENT_ROOT'].'/phpmotors/common/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/fantasyscore/common/footer.php'; ?>

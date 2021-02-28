@@ -1,4 +1,4 @@
-<?php include $_SERVER['DOCUMENT_ROOT'].'/phpmotors/common/header.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/fantasyscore/common/header.php'; ?>
 
 <h1>Welcome to PHP Motors</h1>
 
@@ -16,19 +16,19 @@
     <div id="Upgrades">
         <h2>Delorean Upgrades</h2>
         <div>
-            <img src="/phpmotors/images/upgrades/flux-cap.png" alt="Flux capacitor">
+            <img src="/fantasyscore/images/upgrades/flux-cap.png" alt="Flux capacitor">
             <a href="#" title="Flux Capacitor link">Flux Capacitor</a>
         </div>
         <div>
-            <img src="/phpmotors/images/upgrades/flame.jpg" alt="Flame Decals">
+            <img src="/fantasyscore/images/upgrades/flame.jpg" alt="Flame Decals">
             <a href="#" title="Flame Decals">Flame Decals</a>
         </div>
         <div>
-            <img src="/phpmotors/images/upgrades/bumper_sticker.jpg" alt="Bumper Stickers">
+            <img src="/fantasyscore/images/upgrades/bumper_sticker.jpg" alt="Bumper Stickers">
             <a href="#" title="Bumper Stickers link">Bumper Stickers</a>
         </div>
         <div>
-            <img src="/phpmotors/images/upgrades/hub-cap.jpg" alt="Hub caps">
+            <img src="/fantasyscore/images/upgrades/hub-cap.jpg" alt="Hub caps">
             <a href="#" title="Hub caps link">Hub caps</a>
         </div>
     </div>
@@ -46,4 +46,4 @@
     
 </div>
 
-<?php include $_SERVER['DOCUMENT_ROOT'].'/phpmotors/common/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/fantasyscore/common/footer.php'; ?>
