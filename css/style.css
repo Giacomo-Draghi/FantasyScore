@@ -1,0 +1,213 @@
+/* General style */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    margin: 0;
+    margin-top: 20px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#wrapper {
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin-left: 10px;
+}
+/* Header style */
+#top-header {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#top-header img {
+    margin: auto auto auto 10px;
+}
+
+#top-header a {
+    margin: auto 10px auto auto;
+    color: #8d8d8d;
+}
+
+/* Nav style */
+
+nav ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3a3a3a;
+}
+
+nav ul li {
+    padding-left: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    padding: 11px;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+hr {
+    height: 3px;
+    background-color: #3a3a3a;
+}
+/* Home Style */
+
+#banner {
+    width: 100%;
+}
+#banner-text {
+    background-image: url(/phpmotors/images/delorean.jpg);
+    color: #4c96d7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+}
+
+#banner-text h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#banner-text p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#banner div#banner-link {
+    text-align: center;
+}
+
+#banner div a {
+    border: 2px solid #3a3a3a;
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+#banner div a:hover {
+    border: 2px solid #4c96d7;
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#description #DMC-delorean {
+    order: -1;
+    margin-bottom: 10px;
+}
+
+#Upgrades {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Upgrades h2 {
+    width: 100%;
+}
+
+#Upgrades div{
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5px;
+}
+#Upgrades div img{
+    margin: 0 auto;
+    height: 65px;
+    width: 65px;
+    padding: 15px 25%;
+    background-color:  #4c96d7;
+    border: 2px solid #3a3a3a;
+}
+
+
+#Upgrades div a {
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+span {
+    font-size: x-small;
+}
+
+a#userW {
+    margin: auto;
+}
+
+/* Large view style */
+@media screen and (min-width: 992px) {
+    /* General style */
+    body{
+        background-image: url('/phpmotors/images/site/checkerboard.jpg');
+    }
+    #wrapper {
+        border: #4c96d7 2px solid;
+        border-radius: 5px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* Home Style */
+
+    #banner div#banner-link{
+        position: absolute;
+        padding-top: 120px;
+    }
+
+    #description {
+        flex-direction: row;
+    }
+
+    #description div {
+        width: 49%;
+    }
+
+    #description #DMC-delorean {
+        order: 2;
+        margin-bottom: 0px;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner-link {
+        order: -1;
+    }
+
+  }
